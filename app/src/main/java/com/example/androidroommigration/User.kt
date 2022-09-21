@@ -10,6 +10,6 @@ data class User(
     val email: String,
     val username: String,
     @ColumnInfo(name = "created", defaultValue = "0") /* only static value as default */
-    val created: Long /* new field */ = System.currentTimeMillis() /* this not work as default value */
+    val createdAt: Long /* new field */ = System.currentTimeMillis() /* this not work as default value */
     // default value is necessary to migration to add new values for the created column
 )
