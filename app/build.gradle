@@ -25,6 +25,7 @@ android {
             }
         }
     }
+    // to add the schemas to the test
     sourceSets {
         androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
     }
