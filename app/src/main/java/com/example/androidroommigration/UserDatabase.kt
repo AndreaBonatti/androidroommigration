@@ -6,10 +6,10 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [User::class],
-    version = 1 /* the new field "created" in User require a new version of db*/,
-//    autoMigrations = [
-//        AutoMigration(from = 1, to = 2)
-//    ]
+    version = 2 /* the new field "created" in User require a new version of db*/,
+    autoMigrations = [
+        AutoMigration(from = 1, to = 2)
+    ]
 )
 abstract class UserDatabase : RoomDatabase() {
 
